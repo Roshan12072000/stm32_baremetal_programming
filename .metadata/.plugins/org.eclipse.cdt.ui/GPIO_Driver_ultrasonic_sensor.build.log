@@ -1,0 +1,10 @@
+19:47:30 **** Incremental Build of configuration Debug for project GPIO_Driver_ultrasonic_sensor ****
+make -j8 all 
+arm-none-eabi-size  GPIO_Driver_ultrasonic_sensor.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2048	      0	   1568	   3616	    e20	GPIO_Driver_ultrasonic_sensor.elf
+Finished building: default.size.stdout
+ 
+
+19:47:30 Build Finished. 0 errors, 0 warnings. (took 483ms)
+

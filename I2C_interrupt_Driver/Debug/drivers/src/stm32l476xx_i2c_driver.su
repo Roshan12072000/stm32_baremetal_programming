@@ -1,0 +1,7 @@
+../drivers/src/stm32l476xx_i2c_driver.c:3:6:I2C_PeriClockControl	16	static
+../drivers/src/stm32l476xx_i2c_driver.c:22:6:I2C_Init	16	static
+../drivers/src/stm32l476xx_i2c_driver.c:51:6:I2C_MasterSendData	24	static
+../drivers/src/stm32l476xx_i2c_driver.c:127:6:I2C_MasterReceiveData	24	static
+../drivers/src/stm32l476xx_i2c_driver.c:178:9:I2C_MasterSendDataIT	32	static
+../drivers/src/stm32l476xx_i2c_driver.c:235:9:I2C_MasterReceiveDataIT	32	static
+../drivers/src/stm32l476xx_i2c_driver.c:290:6:I2C_EV_IRQHandling	24	static

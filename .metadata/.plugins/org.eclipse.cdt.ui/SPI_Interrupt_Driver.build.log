@@ -1,0 +1,10 @@
+20:30:34 **** Incremental Build of configuration Debug for project SPI_Interrupt_Driver ****
+make -j8 all 
+arm-none-eabi-size  SPI_Interrupt_Driver.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5056	     32	   1672	   6760	   1a68	SPI_Interrupt_Driver.elf
+Finished building: default.size.stdout
+ 
+
+20:30:35 Build Finished. 0 errors, 0 warnings. (took 464ms)
+

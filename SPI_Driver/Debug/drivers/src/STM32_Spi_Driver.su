@@ -1,0 +1,8 @@
+../drivers/src/STM32_Spi_Driver.c:4:6:SPI_PeripheralControl	16	static
+../drivers/src/STM32_Spi_Driver.c:19:6:SPI_PeriClockControl	16	static
+../drivers/src/STM32_Spi_Driver.c:44:6:SPI_Init	24	static
+../drivers/src/STM32_Spi_Driver.c:92:6:SPI_DeInit	16	static
+../drivers/src/STM32_Spi_Driver.c:106:10:SPI_GetFlagStatus	16	static
+../drivers/src/STM32_Spi_Driver.c:113:6:SPI_ReceiveData	24	static
+../drivers/src/STM32_Spi_Driver.c:136:6:SPI_SendData	32	static
+../drivers/src/STM32_Spi_Driver.c:163:6:SPI_SSIConfig	16	static

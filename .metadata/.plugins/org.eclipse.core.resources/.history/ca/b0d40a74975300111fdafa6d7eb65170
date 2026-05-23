@@ -1,0 +1,108 @@
+void UART2_GPIOInits(void)
+{
+    GPIO_Handle_t UARTPins;
+
+    GPIOA_PCLK_EN();
+
+    UARTPins.pGPIOx = GPIOA;
+
+    UARTPins.GPIO_PinConfig.GPIO_PinMode =
+            GPIO_MODE_ALTFN;
+
+    UARTPins.GPIO_PinConfig.GPIO_PinAltFunMode =
+            7;
+
+    UARTPins.GPIO_PinConfig.GPIO_PinOPType =
+            GPIO_OP_TYPE_PP;
+
+    UARTPins.GPIO_PinConfig.GPIO_PinPuPdControl =
+            GPIO_PIN_PU;
+
+    UARTPins.GPIO_PinConfig.GPIO_PinSpeed =
+            GPIO_SPEED_FAST;
+
+    /*
+     * PA2 -> TX
+     */
+    UARTPins.GPIO_PinConfig.GPIO_PinNumber =
+            GPIO_PIN_NO_2;
+
+    GPIO_Init(&UARTPins);
+
+    /*
+     * PA3 -> RX
+     */
+    UARTPins.GPIO_PinConfig.GPIO_PinNumber =
+            GPIO_PIN_NO_3;
+
+    GPIO_Init(&UARTPins);
+}
+
+void UART2_Init(void)
+{
+    USART2_PCLK_EN();
+
+    /*
+     * Disable USART
+     */
+    USART2->CR1 &= ~(1 << USART_CR1_UE_Pos);
+
+    /*
+     * Baudrate
+     * 80MHz / 115200  = 694, as of now 35 for default clock 4Mhz
+     */
+    USART2->BRR = 35;
+
+    /*
+     * Enable TX
+     */
+    USART2->CR1 |=
+            (1 << USART_CR1_TE_Pos);
+
+    /*
+     * Enable RX
+     */
+    USART2->CR1 |=
+            (1 << USART_CR1_RE_Pos);
+
+    /*
+     * Enable USART
+     */
+    USART2->CR1 |=
+            (1 << USART_CR1_UE_Pos);
+}
+
+void UART_SendData(uint8_t *pTxBuffer,
+                   uint32_t Len)
+{
+    for(uint32_t i = 0 ; i < Len ; i++)
+    {
+        /*
+         * Wait until TXE set
+         */
+        while(!(USART2->ISR &
+                (1 << USART_ISR_TXE_Pos)));
+
+        /*
+         * Write data
+         */
+        USART2->TDR = pTxBuffer[i];
+    }
+
+    /*
+     * Wait TC
+     */
+    while(!(USART2->ISR &
+            (1 << USART_ISR_TC_Pos)));
+}
+
+uint8_t UART_ReceiveData(void)
+{
+    /*
+     * Wait RXNE
+     */
+    while(!(USART2->ISR &
+            (1 << USART_ISR_RXNE_Pos)));
+
+    return (uint8_t)USART2->RDR;
+}

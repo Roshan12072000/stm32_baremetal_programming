@@ -1,0 +1,6 @@
+../drivers/src/stm32l476xx_uart_driver.c:5:6:UART2_GPIOInits	24	static
+../drivers/src/stm32l476xx_uart_driver.c:45:6:UART2_Init	4	static
+../drivers/src/stm32l476xx_uart_driver.c:80:6:UART_SendData	24	static
+../drivers/src/stm32l476xx_uart_driver.c:104:9:UART_ReceiveData	4	static
+../drivers/src/stm32l476xx_uart_driver.c:115:9:UART_SendDataIT	32	static
+../drivers/src/stm32l476xx_uart_driver.c:140:6:USART_IRQHandling	24	static

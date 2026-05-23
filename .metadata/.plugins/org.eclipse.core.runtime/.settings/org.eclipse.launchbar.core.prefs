@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver_led_blink (1),org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver_led_blink,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:I2C_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_Interrupt_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:UART_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Bmtl_Integration_Project,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SPI_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SPI_Interrupt_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:I2C_interrupt_Driver,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:I2C_Driver (1),org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver_interrupt_button
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Bmtl_Integration_Project/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Bmtl_Integration_Project/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver_interrupt_button/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver_interrupt_button/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver_led_blink/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:GPIO_Driver_led_blink/activeLaunchTarget=null\:---

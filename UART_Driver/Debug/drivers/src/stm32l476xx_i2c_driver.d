@@ -1,0 +1,8 @@
+drivers/src/stm32l476xx_i2c_driver.o: \
+ ../drivers/src/stm32l476xx_i2c_driver.c \
+ D:/Stm_baremetal_workspace/UART_Driver/drivers/Inc/stm32l476xx.h \
+ D:/Stm_baremetal_workspace/UART_Driver/drivers/Inc/stm32l476xx_i2c_driver.h \
+ D:/Stm_baremetal_workspace/UART_Driver/drivers/Inc/stm32l476xx.h
+D:/Stm_baremetal_workspace/UART_Driver/drivers/Inc/stm32l476xx.h:
+D:/Stm_baremetal_workspace/UART_Driver/drivers/Inc/stm32l476xx_i2c_driver.h:
+D:/Stm_baremetal_workspace/UART_Driver/drivers/Inc/stm32l476xx.h:

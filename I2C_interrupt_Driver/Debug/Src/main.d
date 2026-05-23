@@ -1,0 +1,9 @@
+Src/main.o: ../Src/main.c \
+ D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/stm32l476xx_gpio_driver.h \
+ D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/stm32l476xx.h \
+ D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/STM32_SPI_Driver.h \
+ D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/stm32l476xx_i2c_driver.h
+D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/stm32l476xx_gpio_driver.h:
+D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/stm32l476xx.h:
+D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/STM32_SPI_Driver.h:
+D:/Stm_baremetal_workspace/I2C_interrupt_Driver/drivers/Inc/stm32l476xx_i2c_driver.h:

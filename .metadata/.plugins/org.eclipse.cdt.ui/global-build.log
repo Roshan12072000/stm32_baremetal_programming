@@ -1,0 +1,15 @@
+18:22:30 **** Incremental Build of configuration Debug for project GPIO_Driver_led_blink ****
+make -j8 all 
+arm-none-eabi-gcc "../drivers/src/stm32l476xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L4 -DSTM32 -DNUCLEO_L476RG -DSTM32L476RGTx -c -I../Inc -I"D:/Stm_baremetal_workspace/GPIO_Driver/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"drivers/src/stm32l476xx_gpio_driver.d" -MT"drivers/src/stm32l476xx_gpio_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "drivers/src/stm32l476xx_gpio_driver.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32L4 -DSTM32 -DNUCLEO_L476RG -DSTM32L476RGTx -c -I../Inc -I"D:/Stm_baremetal_workspace/GPIO_Driver/drivers/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "GPIO_Driver_led_blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Stm_baremetal_workspace\GPIO_Driver\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO_Driver_led_blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO_Driver_led_blink.elf
+ 
+arm-none-eabi-size  GPIO_Driver_led_blink.elf 
+arm-none-eabi-objdump -h -S GPIO_Driver_led_blink.elf  > "GPIO_Driver_led_blink.list"
+   text	   data	    bss	    dec	    hex	filename
+   2248	      0	   1568	   3816	    ee8	GPIO_Driver_led_blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO_Driver_led_blink.list
+ 

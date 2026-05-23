@@ -1,0 +1,10 @@
+10:54:12 **** Incremental Build of configuration Debug for project Bmtl_Integration_Project ****
+make -j8 all 
+arm-none-eabi-size  Bmtl_Integration_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8400	     80	   1984	  10464	   28e0	Bmtl_Integration_Project.elf
+Finished building: default.size.stdout
+ 
+
+10:54:12 Build Finished. 0 errors, 0 warnings. (took 460ms)
+

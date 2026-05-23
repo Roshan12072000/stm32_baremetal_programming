@@ -1,0 +1,13 @@
+/*
+ * stm32l4xx_uart2_driver.h
+ *
+ *  Created on: May 19, 2026
+ *      Author: User
+ */
+
+#ifndef STM32L4XX_UART2_DRIVER_H_
+#define STM32L4XX_UART2_DRIVER_H_
+
+
+
+#endif /* STM32L4XX_UART2_DRIVER_H_ */

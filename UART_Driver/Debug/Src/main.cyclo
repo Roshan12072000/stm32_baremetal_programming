@@ -1,0 +1,15 @@
+../Src/main.c:44:6:SPI1_IRQHandler	1
+../Src/main.c:50:5:main	1
+../Src/main.c:68:6:delay	2
+../Src/main.c:77:6:I2C1_GPIOInits	1
+../Src/main.c:109:6:I2C1_Inits	1
+../Src/main.c:127:6:SPI_GPIO_Init	1
+../Src/main.c:169:6:SPI1_Inits	1
+../Src/main.c:194:6:W25Q_WriteEnable	2
+../Src/main.c:210:9:W25Q_ReadStatus	2
+../Src/main.c:231:6:W25Q_WaitBusy	2
+../Src/main.c:240:6:W25Q_ReadID	2
+../Src/main.c:262:6:W25Q_EraseSector	2
+../Src/main.c:288:6:W25Q_Write_IT	1
+../Src/main.c:317:6:W25Q_Read_IT	1
+../Src/main.c:336:6:SPI_ApplicationEventCallback	9
