@@ -1,0 +1,26 @@
+#include "stm32l476xx_gpio_driver.h"
+#include "stm32l476xx_uart_driver.h"
+#include <stdint.h>
+#include <string.h>
+
+
+void delay(void);
+
+
+uint16_t adc_value;
+
+int main(void)
+{
+    ADC_GPIO_Init();
+
+    ADC1_Init();
+
+    while(1)
+    {
+        adc_value = ADC_Read();
+    }
+}
+void delay(void)
+{
+    for(uint32_t i = 0; i < 500000/2; i++);
+}

@@ -1,0 +1,39 @@
+#include "stm32l476xx.h"
+void DMA1_Init(void)
+{
+    DMA1_PCLK_EN();
+
+    /* USART2_TX -> Channel 7 */
+
+    DMA1->CSELR &= ~(0xF << 24);
+    DMA1->CSELR |=  (0x2 << 24);
+
+    DMA1_Channel7->CCR &= ~(1 << 0);
+
+    DMA1_Channel7->CCR |= (1 << 4);   // DIR
+
+    DMA1_Channel7->CCR |= (1 << 7);   // MINC
+
+    DMA1_Channel7->CCR &= ~(1 << 6);  // PINC
+
+    DMA1_Channel7->CCR &= ~(3 << 8);  // PSIZE=8
+
+    DMA1_Channel7->CCR &= ~(3 << 10); // MSIZE=8
+}
+void UART_SendDataDMA(uint8_t *buf,
+                      uint16_t len)
+{
+    DMA1_Channel7->CCR &= ~(1 << 0);
+
+    DMA1_Channel7->CPAR =
+            (uint32_t)&USART2->TDR;
+
+    DMA1_Channel7->CMAR =
+            (uint32_t)buf;
+
+    DMA1_Channel7->CNDTR = len;
+
+    USART2->CR3 |= (1 << 7);   // DMAT
+
+    DMA1_Channel7->CCR |= (1 << 0);
+}

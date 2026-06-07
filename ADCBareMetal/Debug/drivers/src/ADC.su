@@ -1,0 +1,3 @@
+../drivers/src/ADC.c:4:6:ADC_GPIO_Init	24	static
+../drivers/src/ADC.c:22:6:ADC1_Init	16	static
+../drivers/src/ADC.c:64:10:ADC_Read	4	static

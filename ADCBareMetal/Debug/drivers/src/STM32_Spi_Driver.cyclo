@@ -1,0 +1,16 @@
+../drivers/src/STM32_Spi_Driver.c:6:6:SPI_PeripheralControl	2
+../drivers/src/STM32_Spi_Driver.c:21:6:SPI_PeriClockControl	8
+../drivers/src/STM32_Spi_Driver.c:46:6:SPI_Init	4
+../drivers/src/STM32_Spi_Driver.c:94:6:SPI_DeInit	4
+../drivers/src/STM32_Spi_Driver.c:108:10:SPI_GetFlagStatus	2
+../drivers/src/STM32_Spi_Driver.c:115:6:SPI_ReceiveData	5
+../drivers/src/STM32_Spi_Driver.c:138:6:SPI_SendData	5
+../drivers/src/STM32_Spi_Driver.c:165:6:SPI_SSIConfig	2
+../drivers/src/STM32_Spi_Driver.c:177:9:SPI_SendDataIT	2
+../drivers/src/STM32_Spi_Driver.c:196:9:SPI_ReceiveDataIT	2
+../drivers/src/STM32_Spi_Driver.c:215:13:spi_txe_interrupt_handle	5
+../drivers/src/STM32_Spi_Driver.c:256:13:spi_rxne_interrupt_handle	7
+../drivers/src/STM32_Spi_Driver.c:299:13:spi_ovr_interrupt_handle	3
+../drivers/src/STM32_Spi_Driver.c:316:6:SPI_IRQHandling	7
+../drivers/src/STM32_Spi_Driver.c:343:6:SPI_IRQITConfig	12
+../drivers/src/STM32_Spi_Driver.c:377:28:SPI_ApplicationEventCallback	1

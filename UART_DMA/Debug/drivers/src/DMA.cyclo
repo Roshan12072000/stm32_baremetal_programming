@@ -1,0 +1,2 @@
+../drivers/src/DMA.c:2:6:DMA1_Init	1
+../drivers/src/DMA.c:23:6:UART_SendDataDMA	1

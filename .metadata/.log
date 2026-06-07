@@ -1025,3 +1025,24 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-22 17:43:51.530
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-06-05 12:00:29.339 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-05 12:00:52.553
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-05 12:00:52.556
+!MESSAGE Log4j2 initialized with config file D:\Stm_baremetal_workspace\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-05 12:01:00.071
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-06-05 12:16:04.107
+!MESSAGE Indexed 'UART_DMA' (7 sources, 5 headers) in 0.393 sec: 546 declarations; 1,913 references; 13 unresolved inclusions; 0 syntax errors; 333 unresolved names (12%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-06-05 15:20:03.822
+!MESSAGE Indexed 'ADCBareMetal' (8 sources, 62 headers) in 0.516 sec: 2,577 declarations; 4,760 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.027%)

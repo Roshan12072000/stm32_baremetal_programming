@@ -1,0 +1,10 @@
+18:24:39 **** Incremental Build of configuration Debug for project ADCBareMetal ****
+make -j8 all 
+arm-none-eabi-size  ADCBareMetal.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1916	      0	   1568	   3484	    d9c	ADCBareMetal.elf
+Finished building: default.size.stdout
+ 
+
+18:24:40 Build Finished. 0 errors, 0 warnings. (took 395ms)
+
